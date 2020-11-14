@@ -1,5 +1,39 @@
-import React from 'react';
+import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from 'react-router-dom';
+import Header from '../header/Header';
+import Home from '../home/Home';
+import Thread from '../thread/Thread';
+import About from '../about/About';
 
-export default function App() {
-  return <h1>Its Amazine!</h1>;
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Router>
+          <Header />
+          <Switch>
+            <Route
+              path="/"
+              exact
+              render={(routerProps) => <Home {...routerProps} />}
+            />
+            <Route
+              path="/thread"
+              exact
+              render={(routerProps) => <Thread {...routerProps} />}
+            />
+            <Route
+              path="/about"
+              exact
+              render={(routerProps) => <About {...routerProps} />}
+            />
+          </Switch>
+        </Router>
+      </div>
+    );
+  }
 }

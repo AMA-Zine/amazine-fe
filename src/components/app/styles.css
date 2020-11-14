@@ -1,0 +1,45 @@
+:root {
+  --color1: #F55D3E;
+  --color2: #878E88;
+  --color3: #f7cb15;
+  --color4: #ffffff;
+  --color5: #76bed0;
+}
+
+header {
+  background-color: var(--color1);
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  background-color: var(--color5);
+}
+
+article {
+  border: 2px solid var(--color2);
+  width: 250px;
+}
+
+section {
+  border: 2px solid var(--color2);
+  width: 200px;
+}
+
+.featuredArticle {
+  background-color: var(--color3);
+}
+
+.featureGrid {
+
+}
+
+.articleGrid {
+
+}
+
+.redText {
+  color: red;
+}
