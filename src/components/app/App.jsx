@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import Header from '../header/Header';
 import Home from '../home/Home';
-import Thread from '../thread/Thread';
+import ThreadDetails from '../thread-details/ThreadDetails';
 import About from '../about/About';
 import MichelleDetail from '../about-details/MichelleDetail';
 import PatrickDetail from '../about-details/PatrickDetail';
@@ -28,7 +28,7 @@ export default class App extends Component {
             <Route
               path="/thread"
               exact
-              render={(routerProps) => <Thread {...routerProps} />}
+              render={(routerProps) => <ThreadDetails {...routerProps} />}
             />
             <Route
               path="/about"
