@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getRecipe, getWine, getDessert } from '../services/recipe-api';
 
-export const Recipe = () => {
+export const useRecipe = () => {
   const [recipe, setRecipe] = useState([]);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ export const Recipe = () => {
   };
 };
 
-export const Wine = () => {
+export const useWine = () => {
   const [wine, setWine] = useState([]);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ export const Wine = () => {
   };
 };
 
-export const Dessert = () => {
+export const useDessert = () => {
   const [dessert, setDessert] = useState([]);
 
   useEffect(() => {

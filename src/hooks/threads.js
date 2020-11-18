@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getThreads, getThreadById } from '../services/threads-api';
 
-export const Threads = () => {
+export const useThreads = () => {
   const [threads, setThreads] = useState([]);
 
   useEffect(() => {
