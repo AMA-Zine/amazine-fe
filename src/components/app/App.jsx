@@ -9,6 +9,9 @@ import Home from '../home/Home';
 import Thread from '../thread/Thread';
 import About from '../about/About';
 import MichelleDetail from '../about-details/MichelleDetail';
+import PatrickDetail from '../about-details/PatrickDetail';
+import JoshDetail from '../about-details/JoshDetail';
+import SarahDetail from '../about-details/SarahDetail';
 
 export default class App extends Component {
   render() {
@@ -36,6 +39,21 @@ export default class App extends Component {
               path="/michelle"
               exact
               render={(routerProps) => <MichelleDetail {...routerProps} />}
+            />
+            <Route
+              path="/josh"
+              exact
+              render={(routerProps) => <JoshDetail {...routerProps} />}
+            />
+            <Route
+              path="/patrick"
+              exact
+              render={(routerProps) => <PatrickDetail {...routerProps} />}
+            />
+            <Route
+              path="/sarah"
+              exact
+              render={(routerProps) => <SarahDetail {...routerProps} />}
             />
           </Switch>
         </Router>

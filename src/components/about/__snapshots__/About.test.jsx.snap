@@ -30,11 +30,15 @@ exports[`About component renders About Component 1`] = `
           alt="kitten"
           src="http://placekitten.com/300/250"
         />
-        <h3
-          class="titleFont"
+        <a
+          href="/sarah"
         >
-          I'm Sarah. Ask Me Anything!
-        </h3>
+          <h3
+            class="titleFont"
+          >
+            I'm Sarah. Ask Me Anything!
+          </h3>
+        </a>
         <p
           class="bodyFont"
         >
@@ -78,11 +82,15 @@ exports[`About component renders About Component 1`] = `
           alt="kitten"
           src="http://placekitten.com/300/250"
         />
-        <h3
-          class="titleFont"
+        <a
+          href="/patrick"
         >
-          I'm Patrick. Ask Me Anything!
-        </h3>
+          <h3
+            class="titleFont"
+          >
+            I'm Patrick. Ask Me Anything!
+          </h3>
+        </a>
         <p
           class="bodyFont"
         >
@@ -100,11 +108,15 @@ exports[`About component renders About Component 1`] = `
           alt="kitten"
           src="http://placekitten.com/300/250"
         />
-        <h3
-          class="titleFont"
+        <a
+          href="/josh"
         >
-          I'm Josh. Ask Me Anything!
-        </h3>
+          <h3
+            class="titleFont"
+          >
+            I'm Josh. Ask Me Anything!
+          </h3>
+        </a>
         <p
           class="bodyFont"
         >
