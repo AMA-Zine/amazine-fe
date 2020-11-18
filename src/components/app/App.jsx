@@ -28,12 +28,12 @@ export default class App extends Component {
               render={(routerProps) => <Thread {...routerProps} />}
             />
             <Route
-              exact path="/about"
+              path="/about"
               exact
               render={(routerProps) => <About {...routerProps} />}
             />
             <Route
-              exact path="/michelle"
+              path="/michelle"
               exact
               render={(routerProps) => <MichelleDetail {...routerProps} />}
             />

@@ -9,4 +9,4 @@ describe('Header component', () => {
     const { asFragment } = render(<MemoryRouter><Header /></MemoryRouter>);
     expect(asFragment()).toMatchSnapshot();
   });
-}); 
+});
