@@ -1,5 +1,3 @@
-const fetch = require('node-fetch');
-
 const URL = process.env.REACT_APP_API_URL;
 
 export const getThreads = () => {
@@ -11,8 +9,8 @@ export const getThreads = () => {
         title: thread.title,
         image: thread.image,
         flair: thread.flair
-    })))
-}
+      })));
+};
 
 export const getThreadById = (id) => {
   return fetch(`${URL}/api/v1/threads/${id}`)
@@ -23,6 +21,6 @@ export const getThreadById = (id) => {
         title: thread.title,
         image: thread.image,
         flair: thread.flair
-    })))
-}
+      })));
+};
 

@@ -1,7 +1,18 @@
 import React from 'react';
+import { useThreads } from '../../hooks/threads';
+import { useRecipe, useWine, useDessert } from '../../hooks/recipes';
+import { useNatGeo } from '../../hooks/natGeo';
 import styles from '../app/styles.css';
 
 export default function Home() {
+  const { threads } = useThreads();
+  const { recipe } = useRecipe();
+  const { wine } = useWine();
+  const { dessert } = useDessert();
+  const { natGeo } = useNatGeo();
+
+  console.log('here', threads);
+
   return (
     <div className={`${styles.headerSpace} ${styles.bottomSpace}`}>
       <hr />

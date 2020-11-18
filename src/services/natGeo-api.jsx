@@ -1,5 +1,3 @@
-const fetch = require('node-fetch');
-
 const URL = process.env.REACT_APP_API_URL;
 
 export const getNatGeo = () => {
@@ -10,5 +8,5 @@ export const getNatGeo = () => {
         id: image.id,
         alt: image.alt_text,
         image: image.image
-    })))
-}
+      })));
+};

@@ -1,5 +1,3 @@
-const fetch = require('node-fetch');
-
 const URL = process.env.REACT_APP_API_URL;
 
 export const getResponses = () => {
@@ -9,8 +7,8 @@ export const getResponses = () => {
       json.map(response => ({
         id: response.id,
         qAndA: response.qAndA
-    })))
-}
+      })));
+};
 
 export const getResponseById = (id) => {
   return fetch(`${URL}/api/v1/responses/${id}`)
@@ -19,5 +17,5 @@ export const getResponseById = (id) => {
       json.map(response => ({
         id: response.id,
         qAndA: response.qAndA
-    })))
-}
+      })));
+};

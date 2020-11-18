@@ -1,5 +1,3 @@
-const fetch = require('node-fetch');
-
 const URL = process.env.REACT_APP_API_URL;
 
 export const getRecipe = () => {
@@ -11,8 +9,8 @@ export const getRecipe = () => {
         title: recipe.title,
         image: recipe.image,
         linkSrc: recipe.sourceUrl
-    })))
-}
+      })));
+};
 
 export const getWine = () => {
   return fetch(`${URL}/api/v1/wine`)
@@ -23,8 +21,8 @@ export const getWine = () => {
         title: wine.title,
         image: wine.imageUrl,
         linkSrc: wine.link
-    })))
-}
+      })));
+};
 
 export const getDessert = async() => {
   return fetch(`${URL}/api/v1/dessert`)
@@ -35,6 +33,6 @@ export const getDessert = async() => {
         title: dessert.title,
         image: dessert.image,
         linkSrc: dessert.sourceUrl
-    })))
-}
+      })));
+};
 
