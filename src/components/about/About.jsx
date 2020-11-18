@@ -22,7 +22,9 @@ export default function About() {
           ${aboutstyles.columnLeft}
         `}>
           <img src="http://placekitten.com/300/250" alt="kitten"></img>
+          <Link key='sarah' to='/sarah'>
           <h3 className={styles.titleFont}>I'm Sarah. Ask Me Anything!</h3>
+          </Link>
           <p className={styles.bodyFont}>Article Description</p>
         </article>
 
@@ -44,7 +46,9 @@ export default function About() {
           ${aboutstyles.columnRight}
         `}>
           <img src="http://placekitten.com/300/250" alt="kitten"></img>
+          <Link key='patrick' to='/patrick'>
           <h3 className={styles.titleFont}>I'm Patrick. Ask Me Anything!</h3>
+          </Link>
           <p className={styles.bodyFont}>Article Description</p>
         </article>
 
@@ -54,7 +58,9 @@ export default function About() {
           ${aboutstyles.columnRight}
         `}>
           <img src="http://placekitten.com/300/250" alt="kitten"></img>
+          <Link key='josh' to='/josh'>
           <h3 className={styles.titleFont}>I'm Josh. Ask Me Anything!</h3>
+          </Link>
           <p className={styles.bodyFont}>Article Description</p>
         </article>
 
