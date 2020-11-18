@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component renders About Component 1`] = `
+<DocumentFragment>
+  <div
+    class="headerSpace bottomSpace"
+  >
+    <hr />
+    <article
+      class="bannerArticle"
+    >
+      <h1
+        class="normalGap"
+      >
+        About Us
+      </h1>
+    </article>
+    <hr />
+    <div
+      class="aboutGrid"
+    >
+      <article
+        class="
+          article 
+          rowTop 
+          columnLeft
+        "
+      >
+        <img
+          alt="kitten"
+          src="http://placekitten.com/300/250"
+        />
+        <h3
+          class="titleFont"
+        >
+          I'm Sarah. Ask Me Anything!
+        </h3>
+        <p
+          class="bodyFont"
+        >
+          Article Description
+        </p>
+      </article>
+      <article
+        class="
+          article 
+          rowBottom
+          columnLeft
+        "
+      >
+        <img
+          alt="kitten"
+          src="http://placekitten.com/300/250"
+        />
+        <a
+          href="/michelle"
+        >
+          <h3
+            class="titleFont"
+          >
+            I'm Michelle. Ask Me Anything!
+          </h3>
+        </a>
+        <p
+          class="bodyFont"
+        >
+          Article Description
+        </p>
+      </article>
+      <article
+        class="
+          article 
+          rowTop
+          columnRight
+        "
+      >
+        <img
+          alt="kitten"
+          src="http://placekitten.com/300/250"
+        />
+        <h3
+          class="titleFont"
+        >
+          I'm Patrick. Ask Me Anything!
+        </h3>
+        <p
+          class="bodyFont"
+        >
+          Article Description
+        </p>
+      </article>
+      <article
+        class="
+          article 
+          rowBottom
+          columnRight
+        "
+      >
+        <img
+          alt="kitten"
+          src="http://placekitten.com/300/250"
+        />
+        <h3
+          class="titleFont"
+        >
+          I'm Josh. Ask Me Anything!
+        </h3>
+        <p
+          class="bodyFont"
+        >
+          Article Description
+        </p>
+      </article>
+    </div>
+    <hr />
+  </div>
+</DocumentFragment>
+`;

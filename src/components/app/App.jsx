@@ -8,6 +8,7 @@ import Header from '../header/Header';
 import Home from '../home/Home';
 import Thread from '../thread/Thread';
 import About from '../about/About';
+import MichelleDetail from '../about-details/MichelleDetail';
 
 export default class App extends Component {
   render() {
@@ -30,6 +31,11 @@ export default class App extends Component {
               path="/about"
               exact
               render={(routerProps) => <About {...routerProps} />}
+            />
+            <Route
+              path="/michelle"
+              exact
+              render={(routerProps) => <MichelleDetail {...routerProps} />}
             />
           </Switch>
         </Router>

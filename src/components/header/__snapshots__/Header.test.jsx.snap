@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders Header Component 1`] = `
+<DocumentFragment>
+  <header>
+    <h1>
+      The Most Amazine Zine You Have Ever Seen!
+    </h1>
+    <img
+      class="logo"
+      src="/path/image"
+    />
+    <div
+      class="linkList"
+    >
+      <a
+        href="/"
+      >
+        <div>
+          Home
+        </div>
+      </a>
+      <a
+        href="/about"
+      >
+        <div>
+          About
+        </div>
+      </a>
+    </div>
+  </header>
+</DocumentFragment>
+`;

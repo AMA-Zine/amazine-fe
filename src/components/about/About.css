@@ -1,0 +1,27 @@
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 25px;
+  margin: 0 25px 0 25px;
+} 
+
+.columnLeft {
+  grid-column-start: 1;
+  grid-column-end: span 1;
+}
+
+.columnRight {
+  grid-column-start: 2;
+  grid-column-end: span 1;
+}
+
+.rowTop {
+  grid-row-start: 1;
+  grid-row-end: span 1;
+}
+
+.rowBottom {
+  grid-row-start: 2;
+  grid-row-end: span 1;
+}
