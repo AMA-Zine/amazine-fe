@@ -8,7 +8,7 @@ exports[`Header component renders Header Component 1`] = `
     </h1>
     <img
       class="logo"
-      src="/path/image"
+      src="/assets/amazine.png"
     />
     <div
       class="linkList"

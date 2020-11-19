@@ -29,7 +29,7 @@ exports[`About component renders About Component 1`] = `
         <img
           alt="portrait of Sarah"
           class="bioPic"
-          src="/path/image"
+          src="/assets/sarah-picture.jpg"
         />
         <a
           href="/sarah"
@@ -56,7 +56,7 @@ exports[`About component renders About Component 1`] = `
         <img
           alt="portrait of Michelle"
           class="bioPic"
-          src="/path/image"
+          src="/assets/michelle-portrait.JPG"
         />
         <a
           href="/michelle"
@@ -83,7 +83,7 @@ exports[`About component renders About Component 1`] = `
         <img
           alt="portrait of Patrick"
           class="bioPic"
-          src="/path/image"
+          src="/assets/patrick-picture.jpg"
         />
         <a
           href="/patrick"
@@ -110,7 +110,7 @@ exports[`About component renders About Component 1`] = `
         <img
           alt="portrait of Josh"
           class="bioPic"
-          src="/path/image"
+          src="/assets/josh-picture.jpeg"
         />
         <a
           href="/josh"
