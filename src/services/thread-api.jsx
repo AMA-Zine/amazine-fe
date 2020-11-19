@@ -15,12 +15,12 @@ export const getThreads = () => {
 export const getThreadById = (id) => {
   return fetch(`${URL}/api/v1/threads/${id}`)
     .then(res => res.json())
-    .then(json =>
-      json.map(thread => ({
+    .then(thread => {
+      return {
         id: thread.id,
         title: thread.title,
         image: thread.image,
         flair: thread.flair
-      })));
+    }});
 };
 

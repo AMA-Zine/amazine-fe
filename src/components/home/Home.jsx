@@ -21,7 +21,7 @@ export default function Home() {
 
   const subThreadList = subThreads.map((currentThread, i) => (
     <div key={currentThread.title}>
-      <Link to={`/thread/:${i + 5}`} className={styles.listArticle}>
+      <Link to={`/thread/${threads[i + 5] && threads[i + 5].id}`} className={styles.listArticle}>
         <article>
           <img src="http://placekitten.com/150/200"></img>
           <section>
@@ -49,7 +49,7 @@ export default function Home() {
 
       <div className={styles.articleGrid}>
 
-      <Link to={'/thread/:0'} className={`
+      <Link to={`/thread/${threads[0] && threads[0].id}`} className={`
           ${styles.featured}
         `}>
         <article>
@@ -59,7 +59,7 @@ export default function Home() {
         </article>
       </Link>
 
-      <Link to={'/thread/:1'} className={`
+      <Link to={`/thread/${threads[1] && threads[1].id}`} className={`
           ${styles.article} 
           ${styles.rowTop} 
           ${styles.columnLeft}
@@ -71,7 +71,7 @@ export default function Home() {
         </article>
       </Link>
 
-      <Link to={'/thread/:2'} className={`
+      <Link to={`/thread/${threads[2] && threads[2].id}`} className={`
           ${styles.article} 
           ${styles.rowBottom}
           ${styles.columnLeft}
@@ -83,7 +83,7 @@ export default function Home() {
         </article>
       </Link>
 
-      <Link to={'/thread/:3'} className={`
+      <Link to={`/thread/${threads[3] && threads[3].id}`} className={`
           ${styles.article} 
           ${styles.rowTop}
           ${styles.columnRight}
@@ -95,7 +95,7 @@ export default function Home() {
         </article>
       </Link>
 
-      <Link to={'/thread/:4'} className={`
+      <Link to={`/thread/${threads[4] && threads[4].id}`} className={`
           ${styles.article} 
           ${styles.rowBottom}
           ${styles.columnRight}
