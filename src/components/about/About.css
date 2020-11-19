@@ -25,3 +25,27 @@
   grid-row-start: 2;
   grid-row-end: span 1;
 }
+
+.bioPic {
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 50%;
+}
+
+.ghIcon {
+  background-image: '/assets/githubLogo.png';
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 8px;
+}
+
+.liIcon {
+  background-image: '/assets/linkedin.png';
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  margin-top: 8px;
+}
