@@ -8,7 +8,8 @@ export const getThreads = () => {
         id: thread.id,
         title: thread.title,
         image: thread.image,
-        flair: thread.flair
+        flair: thread.flair,
+        author: thread.author
       })));
 };
 

@@ -13,9 +13,10 @@ export const getResponses = () => {
 export const getResponseById = (id) => {
   return fetch(`${URL}/api/v1/responses/${id}`)
     .then(res => res.json())
-    .then(json =>
-      json.map(response => ({
+    .then(response => {
+      return {
         id: response.id,
         qAndA: response.qAndA
-      })));
+      }
+    })
 };
