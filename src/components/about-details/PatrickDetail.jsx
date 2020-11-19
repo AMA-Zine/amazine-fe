@@ -11,6 +11,9 @@ export default function PatrickDetail() {
       <img src={patrick} alt="portrait of Patrick" className={aboutstyles.bioPic} />
       <h1 className={styles.normalGap}>
         I'm Patrick Wilson, a software developer based in Portland, OR. Ask Me Anything!
+        <a href="https://github.com/pm-wilson" ><div className={aboutstyles.ghIcon}></div></a>
+        
+        <a href="https://www.linkedin.com/in/pmwilson333/" ><div className={aboutstyles.liIcon}></div></a>
       </h1>
     </article>
     <hr />

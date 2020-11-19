@@ -10,7 +10,11 @@ export default function JoshDetail() {
       <img src={josh} alt="portrait of Josh" className={aboutstyles.bioPic} />
       <h1 className={styles.normalGap}>
         I'm Josh Olloqui, a software developer based in Portland, OR. Ask Me Anything!
+        <a href="https://github.com/josholloqui" ><div className={aboutstyles.ghIcon}></div></a>
+        
+        <a href="https://www.linkedin.com/in/josholloqui/" ><div className={aboutstyles.liIcon}></div></a>
       </h1>
+
     </article>
     <hr />
 

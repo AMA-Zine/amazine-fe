@@ -11,6 +11,9 @@ export default function MichelleDetail() {
       <img src={michelle} alt="portrait of Michelle" className={aboutstyles.bioPic} />
       <h1 className={styles.normalGap}>
         I'm Michelle Stermitz, a software developer based in Portland, OR. Ask Me Anything!
+        <a href="https://github.com/michmitz" ><div className={aboutstyles.ghIcon}></div></a>
+        
+        <a href="https://www.linkedin.com/in/michellestermitz/" ><div className={aboutstyles.liIcon}></div></a>        
       </h1>
     </article>
     <hr />
