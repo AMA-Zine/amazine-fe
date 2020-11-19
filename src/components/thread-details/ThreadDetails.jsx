@@ -11,10 +11,16 @@ export default function ThreadDetails() {
 
   const qAList = response.qAndA;
 
+  function displayQuestion(list, question, i) {
+    if(i > 0 && question === list[i - 1].question) return false;
+
+    return true;
+  }
+
   const displayQA = qAList && qAList.map((qAItem, i) => (
     <div key={i}>
       <h2>
-        {qAItem.question}
+        {displayQuestion(qAList, qAItem.question, i) && qAItem.question}
       </h2>
       <h3>
         {qAItem.answer}
@@ -24,11 +30,11 @@ export default function ThreadDetails() {
 
   return (
     <div className={`${styles.headerSpace} ${styles.bottomSpace}`}>
-    <hr />
+      <hr />
     
       <article className={styles.bannerArticle}>
         <h1 className={styles.normalGap}>
-        {thread && thread.title}     
+          {thread && thread.title}     
         </h1>
         <h2>{thread && thread.flair}</h2>
       </article>
@@ -40,5 +46,5 @@ export default function ThreadDetails() {
       <hr />
 
     </div>
-  )
+  );
 }
