@@ -26,7 +26,7 @@ export default class App extends Component {
               render={(routerProps) => <Home {...routerProps} />}
             />
             <Route
-              path="/thread"
+              path="/thread/:id"
               exact
               render={(routerProps) => <ThreadDetails {...routerProps} />}
             />
