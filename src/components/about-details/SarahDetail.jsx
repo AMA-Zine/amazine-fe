@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from '../app/styles.css';
 import aboutstyles from'../../components/about/About.css';
-import sarah from '../../assets/sarah-picture.jpg';
+
 
 export default function SarahDetail() {
   return (
     <div className={`${styles.headerSpace} ${styles.bottomSpace}`}>
     <hr />
     <article className={styles.bannerArticle}>
-      <img src={sarah} alt="portrait of Sarah" className={aboutstyles.bioPic} />
+      <img src={'/assets/sarah-picture.jpg'} alt="portrait of Sarah" className={aboutstyles.bioPic} />
       <h1 className={styles.normalGap}>
         I'm Sarah Rector, a software developer based in Portland, OR. Ask Me Anything!
         <a href="https://github.com/SarahRector" ><div className={aboutstyles.ghIcon}></div></a>

@@ -33,7 +33,7 @@
 }
 
 .ghIcon {
-  background-image: url('../../assets/githubLogo.png');
+  background-image: '/assets/githubLogo.png';
   background-size: cover;
   background-repeat: no-repeat;
   width: 30px;
@@ -42,7 +42,7 @@
 }
 
 .liIcon {
-  background-image: url('../../assets/linkedin.png');
+  background-image: '/assets/linkedin.png';
   background-size: cover;
   background-repeat: no-repeat;
   width: 30px;

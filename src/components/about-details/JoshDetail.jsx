@@ -1,13 +1,12 @@
 import React from 'react';
 import styles from '../app/styles.css';
-import josh from '../../assets/josh-picture.jpeg';
 import aboutstyles from '../../components/about/About.css';
 export default function JoshDetail() {
   return (
     <div className={`${styles.headerSpace} ${styles.bottomSpace}`}>
     <hr />
     <article className={styles.bannerArticle}>
-      <img src={josh} alt="portrait of Josh" className={aboutstyles.bioPic} />
+      <img src={'/assets/josh-picture.jpeg'} alt="portrait of Josh" className={aboutstyles.bioPic} />
       <h1 className={styles.normalGap}>
         I'm Josh Olloqui, a software developer based in Portland, OR. Ask Me Anything!
         <a href="https://github.com/josholloqui" ><div className={aboutstyles.ghIcon}></div></a>

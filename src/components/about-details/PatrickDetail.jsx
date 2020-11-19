@@ -1,14 +1,13 @@
 import React from 'react';
 import styles from '../app/styles.css';
 import aboutstyles from '../../components/about/About.css';
-import patrick from '../../assets/patrick-picture.jpg';
 
 export default function PatrickDetail() {
   return (
     <div className={`${styles.headerSpace} ${styles.bottomSpace}`}>
     <hr />
     <article className={styles.bannerArticle}>
-      <img src={patrick} alt="portrait of Patrick" className={aboutstyles.bioPic} />
+      <img src={'/assets/patrick-picture.jpg'} alt="portrait of Patrick" className={aboutstyles.bioPic} />
       <h1 className={styles.normalGap}>
         I'm Patrick Wilson, a software developer based in Portland, OR. Ask Me Anything!
         <a href="https://github.com/pm-wilson" ><div className={aboutstyles.ghIcon}></div></a>

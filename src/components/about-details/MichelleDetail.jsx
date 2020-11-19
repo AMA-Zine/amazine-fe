@@ -1,14 +1,13 @@
 import React from 'react';
 import styles from '../app/styles.css';
 import aboutstyles from '../../components/about/About.css';
-import michelle from '../../assets/michelle-portrait.jpg';
 
 export default function MichelleDetail() {
   return (
     <div className={`${styles.headerSpace} ${styles.bottomSpace}`}>
     <hr />
     <article className={styles.bannerArticle}>
-      <img src={michelle} alt="portrait of Michelle" className={aboutstyles.bioPic} />
+      <img src={'/assets/michelle-portrait.JPG'} alt="portrait of Michelle" className={aboutstyles.bioPic} />
       <h1 className={styles.normalGap}>
         I'm Michelle Stermitz, a software developer based in Portland, OR. Ask Me Anything!
         <a href="https://github.com/michmitz" ><div className={aboutstyles.ghIcon}></div></a>
