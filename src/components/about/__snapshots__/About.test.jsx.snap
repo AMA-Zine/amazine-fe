@@ -27,8 +27,9 @@ exports[`About component renders About Component 1`] = `
         "
       >
         <img
-          alt="kitten"
-          src="http://placekitten.com/300/250"
+          alt="portrait of Sarah"
+          class="bioPic"
+          src="/path/image"
         />
         <a
           href="/sarah"
@@ -36,13 +37,13 @@ exports[`About component renders About Component 1`] = `
           <h3
             class="titleFont"
           >
-            I'm Sarah. Ask Me Anything!
+            I'm Sarah.
           </h3>
         </a>
         <p
           class="bodyFont"
         >
-          Article Description
+          Ask Me Anything!
         </p>
       </article>
       <article
@@ -53,8 +54,9 @@ exports[`About component renders About Component 1`] = `
         "
       >
         <img
-          alt="kitten"
-          src="http://placekitten.com/300/250"
+          alt="portrait of Michelle"
+          class="bioPic"
+          src="/path/image"
         />
         <a
           href="/michelle"
@@ -62,13 +64,13 @@ exports[`About component renders About Component 1`] = `
           <h3
             class="titleFont"
           >
-            I'm Michelle. Ask Me Anything!
+            I'm Michelle.
           </h3>
         </a>
         <p
           class="bodyFont"
         >
-          Article Description
+          Ask Me Anything!
         </p>
       </article>
       <article
@@ -79,8 +81,9 @@ exports[`About component renders About Component 1`] = `
         "
       >
         <img
-          alt="kitten"
-          src="http://placekitten.com/300/250"
+          alt="portrait of Patrick"
+          class="bioPic"
+          src="/path/image"
         />
         <a
           href="/patrick"
@@ -88,13 +91,13 @@ exports[`About component renders About Component 1`] = `
           <h3
             class="titleFont"
           >
-            I'm Patrick. Ask Me Anything!
+            I'm Patrick.
           </h3>
         </a>
         <p
           class="bodyFont"
         >
-          Article Description
+          Ask Me Anything!
         </p>
       </article>
       <article
@@ -105,8 +108,9 @@ exports[`About component renders About Component 1`] = `
         "
       >
         <img
-          alt="kitten"
-          src="http://placekitten.com/300/250"
+          alt="portrait of Josh"
+          class="bioPic"
+          src="/path/image"
         />
         <a
           href="/josh"
@@ -114,13 +118,13 @@ exports[`About component renders About Component 1`] = `
           <h3
             class="titleFont"
           >
-            I'm Josh. Ask Me Anything!
+            I'm Josh.
           </h3>
         </a>
         <p
           class="bodyFont"
         >
-          Article Description
+          Ask Me Anything!
         </p>
       </article>
     </div>
