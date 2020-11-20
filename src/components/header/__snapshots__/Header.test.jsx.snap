@@ -9,6 +9,7 @@ exports[`Header component renders Header Component 1`] = `
       class="linkList"
     >
       <a
+        class="homeLink"
         href="/"
       >
         <div>
