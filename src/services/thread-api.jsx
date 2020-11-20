@@ -22,6 +22,7 @@ export const getThreadById = (id) => {
         title: thread.title,
         image: thread.image,
         flair: thread.flair
-    }});
+      };
+    });
 };
 
