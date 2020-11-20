@@ -7,7 +7,7 @@ exports[`About component renders About Component 1`] = `
   >
     <hr />
     <article
-      class="bannerArticle"
+      class="bannerArticles"
     >
       <h1
         class="normalGap"

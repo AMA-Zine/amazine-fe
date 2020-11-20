@@ -9,7 +9,7 @@ export default function About() {
   return (
     <div className={`${styles.headerSpace} ${styles.bottomSpace}`}>
       <hr />
-      <article className={styles.bannerArticle}>
+      <article className={styles.bannerArticles}>
         <h1 className={styles.normalGap}>
         About Us
         </h1>
