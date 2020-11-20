@@ -23,17 +23,21 @@ export default function Home() {
   const subThreadList = subThreads.map((currentThread, i) => (
     <div key={currentThread.title}>
       <Link to={`
-        /thread/${threads[i + 5] && threads[i + 5].id}`
+        /thread/${threads[i + 5]?.id}`
       } className={styles.listArticle}>
         <article>
-          <img src="http://placekitten.com/150/200"></img>
+          <img
+            className={styles.listImage}
+            src={threads[i + 5]?.image}
+            alt={threads[i + 5]?.flair}
+          ></img>
           <section>
             <h4 className=
-              {styles.titleFont}>{currentThread && currentThread.title}
+              {styles.titleFont}>{currentThread?.title}
             </h4>
             <p 
               className={styles.bodyFont}
-            >Interview by {currentThread && currentThread.author}</p>
+            >Interview by {currentThread?.author}</p>
           </section>
         </article>
       </Link>
@@ -54,69 +58,89 @@ export default function Home() {
 
       <div className={styles.articleGrid}>
 
-        <Link to={`/thread/${threads[0] && threads[0].id}`} className={`
+        <Link to={`/thread/${threads[0]?.id}`} className={`
           ${styles.featured}
         `}>
           <article>
-            <img src={'http://placekitten.com/600/400'} alt="kitten"></img>
+            <img 
+              className={styles.featuredImage} 
+              src={threads[0]?.image} 
+              alt={threads[0]?.flair}
+            ></img>
             <h3 
               className={styles.titleFont}
-            >{threads[0] && threads[0].title}</h3>
+            >{threads[0]?.title}</h3>
             <p 
               className={styles.bodyFont}
-            >Interview by {threads[0] && threads[0].author}</p>
+            >Interview by {threads[0]?.author}</p>
           </article>
         </Link>
 
-        <Link to={`/thread/${threads[1] && threads[1].id}`} className={`
+        <Link to={`/thread/${threads[1]?.id}`} className={`
           ${styles.article} 
           ${styles.rowTop} 
           ${styles.columnLeft}
         `}>
           <article>
-            <img src="http://placekitten.com/300/250" alt="kitten"></img>
+            <img 
+              className={styles.frontImage} 
+              src={threads[1]?.image} 
+              alt={threads[1]?.flair}
+            ></img>
             <h3 
               className={styles.titleFont}
-            >{threads[1] && threads[1].title}</h3>
+            >{threads[1]?.title}</h3>
             <p 
               className={styles.bodyFont}
-            >Interview by {threads[1] && threads[1].author}</p>
+            >Interview by {threads[1]?.author}</p>
           </article>
         </Link>
 
-        <Link to={`/thread/${threads[2] && threads[2].id}`} className={`
+        <Link to={`/thread/${threads[2]?.id}`} className={`
           ${styles.article} 
           ${styles.rowBottom}
           ${styles.columnLeft}
         `}>
           <article>
-            <img src="http://placekitten.com/300/250" alt="kitten"></img>
-            <h3 className={styles.titleFont}>{threads[2] && threads[2].title}</h3>
-            <p className={styles.bodyFont}>Interview by {threads[2] && threads[2].author}</p>
+            <img
+              className={styles.frontImage}
+              src={threads[2]?.image}
+              alt={threads[2]?.flair}
+            ></img>
+            <h3 className={styles.titleFont}>{threads[2]?.title}</h3>
+            <p className={styles.bodyFont}>Interview by {threads[2]?.author}</p>
           </article>
         </Link>
 
-        <Link to={`/thread/${threads[3] && threads[3].id}`} className={`
+        <Link to={`/thread/${threads[3]?.id}`} className={`
           ${styles.article} 
           ${styles.rowTop}
           ${styles.columnRight}
         `}>
           <article>
-            <img src="http://placekitten.com/300/250" alt="kitten"></img>
-            <h3 className={styles.titleFont}>{threads[3] && threads[3].title}</h3>
-            <p className={styles.bodyFont}>Interview by {threads[3] && threads[3].author}</p>
+            <img
+              className={styles.frontImage}
+              src={threads[3]?.image}
+              alt={threads[3]?.flair}
+            ></img>
+            <h3 className={styles.titleFont}>{threads[3]?.title}</h3>
+            <p className={styles.bodyFont}>Interview by {threads[3]?.author}</p>
           </article>
         </Link>
 
-        <Link to={`/thread/${threads[4] && threads[4].id}`} className={`
+        <Link to={`/thread/${threads[4]?.id}`} className={`
           ${styles.article} 
           ${styles.rowBottom}
           ${styles.columnRight}
         `}>
           <article>
-            <img src="http://placekitten.com/300/250" alt="kitten"></img>
-            <h3 className={styles.titleFont}>{threads[4] && threads[4].title}</h3>
-            <p className={styles.bodyFont}>Interview by {threads[4] && threads[4].author}</p>
+            <img
+              className={styles.frontImage}
+              src={threads[4]?.image}
+              alt={threads[4]?.flair}
+            ></img>
+            <h3 className={styles.titleFont}>{threads[4]?.title}</h3>
+            <p className={styles.bodyFont}>Interview by {threads[4]?.author}</p>
           </article>
         </Link>
       </div>
