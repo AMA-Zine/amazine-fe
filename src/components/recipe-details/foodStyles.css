@@ -1,0 +1,19 @@
+.foodItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foodText {
+  border: solid 1px var(--color5);
+  margin: 20px;
+  text-align: center;
+  padding: 8px;
+  font-weight: bold;
+  max-width: 850px;
+  line-height: 30px;
+}
+
+.link {
+  margin: 8px;
+}
