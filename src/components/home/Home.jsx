@@ -22,14 +22,18 @@ export default function Home() {
 
   const subThreadList = subThreads.map((currentThread, i) => (
     <div key={currentThread.title}>
-      <Link to={`/thread/${threads[i + 5] && threads[i + 5].id}`} className={styles.listArticle}>
+      <Link to={`
+        /thread/${threads[i + 5] && threads[i + 5].id}`
+      } className={styles.listArticle}>
         <article>
           <img src="http://placekitten.com/150/200"></img>
           <section>
             <h4 className=
               {styles.titleFont}>{currentThread && currentThread.title}
             </h4>
-            <p className={styles.bodyFont}>Interview by {currentThread && currentThread.author}</p>
+            <p 
+              className={styles.bodyFont}
+            >Interview by {currentThread && currentThread.author}</p>
           </section>
         </article>
       </Link>
@@ -54,9 +58,13 @@ export default function Home() {
           ${styles.featured}
         `}>
           <article>
-            <img src="http://placekitten.com/600/400" alt="kitten"></img>
-            <h3 className={styles.titleFont}>{threads[0] && threads[0].title}</h3>
-            <p className={styles.bodyFont}>Interview by {threads[0] && threads[0].author}</p>
+            <img src={'http://placekitten.com/600/400'} alt="kitten"></img>
+            <h3 
+              className={styles.titleFont}
+            >{threads[0] && threads[0].title}</h3>
+            <p 
+              className={styles.bodyFont}
+            >Interview by {threads[0] && threads[0].author}</p>
           </article>
         </Link>
 
@@ -67,8 +75,12 @@ export default function Home() {
         `}>
           <article>
             <img src="http://placekitten.com/300/250" alt="kitten"></img>
-            <h3 className={styles.titleFont}>{threads[1] && threads[1].title}</h3>
-            <p className={styles.bodyFont}>Interview by {threads[1] && threads[1].author}</p>
+            <h3 
+              className={styles.titleFont}
+            >{threads[1] && threads[1].title}</h3>
+            <p 
+              className={styles.bodyFont}
+            >Interview by {threads[1] && threads[1].author}</p>
           </article>
         </Link>
 
