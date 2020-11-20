@@ -12,6 +12,7 @@
   font-weight: bold;
   max-width: 850px;
   line-height: 30px;
+  background-color: var(--questionBoxColor);
 }
 
 .link {

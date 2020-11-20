@@ -7,6 +7,10 @@
   --color3: #ffbd59;
   --color4: #f3f3f3;
   --color5: #0094b1;
+  
+  --questionBoxColor: #e8f5f8;
+  --answerBoxColor: #fff4e4;
+
 
   --hfont: 'Roboto Condensed', sans-serif;
   --bfont: 'Roboto Mono', monospace;
