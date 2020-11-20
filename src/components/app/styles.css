@@ -38,7 +38,13 @@ background-color: var(--answerBoxColor);
 
 .titleFont {
   font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.2rem;
   color: var(--color1);
+  text-transform: capitalize;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .featurePadding {
@@ -47,48 +53,67 @@ background-color: var(--answerBoxColor);
 
 .bodyFont {
   font-family: 'Roboto Mono', monospace;
+  font-size: .88rem;
   color: var(--color5);
   font-weight: bold;
 }
 
 hr {
-  margin: 50px 0 50px 0;
+  margin: 25px 0 25px 0;
   border-top: 1px solid var(--color2);
 }
 
 header {
   background-color: var(--color1);
-  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   top: 0;
-  width: var(--screen-width);
-  max-height: var(--header-height);
-  z-index: 1;
-  padding-bottom: 15px;
-  display: flex;
+  left: 0;
+  position: fixed;
+  z-index: 2;
 }
 
 h1 {
   text-align: center;
   font-family: var(--hfont);
-  align-self: center;
-  width: var(--screen-width);
+}
+
+.title {
+  font-size: 58px;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 3px;
+  margin: 0;
 }
 
 .linkList {
+  padding-left: 20px;
   display: flex;
-  position: absolute;
+  flex-direction: row;
+  color: #040403;
 }
 
-.linkList > * {
-  margin: 15px 15px 15px 15px;
-  font-weight: bolder;
+.aboutLink {
+  padding-left: 20px;
+  color: #040403;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
-.headerSpace {
-  position: absolute;
-  top: var(--header-height);
-  width: var(--screen-width);
+.homeLink {
+  color: #040403;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
+
+
 
 .bottomSpace {
   margin-bottom: 250px;
@@ -97,10 +122,9 @@ h1 {
 .bannerArticle {
   font-family: var(--hfont);
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding-top: 20px;
-  padding-left: 65px;
 }
 
 .normalGap {
@@ -128,6 +152,18 @@ h1 {
   border-left: 1px solid var(--color2);
   border-right: 1px solid var(--color2);
   text-align: center;
+}
+
+.featuredTitle {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 40px;
+  margin: 0;
+  color: var(--color1);
+  text-transform: capitalize;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .columnLeft {
@@ -204,45 +240,40 @@ h2 {
 }
 
 .logo {
-  width: 7%;
+  display: flex;
+  justify-self: end;
+  width: 60px;
   height: auto;
   border-radius: 50%;
-  margin-top: 6px;
-  margin-right: 10px;
-  position: fixed;
-  right: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-.headerContainer {
-  display: flex;
-  flex-direction: row;
-}
-
-.title {
-  font-size: 6em;
-  position: fixed;
-  margin-left: auto;
-  margin-right: auto;
+.photoDay {
+  margin-top: 120px;
 }
 
 .featuredImage {
-  width: 600px;
+  width: 90%;
   height: auto;
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 
 .frontImage {
-  max-width: 300px;
-  height: 250px;
+  max-width: 90%;
+  height: auto;
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 
 .listImage {
-  width: auto;
-  height: 250px;
+  width: 23%;
+  height: auto;
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 
 .natGeoImage {
   width: auto;
-  height: 150px;
+  height: 100px;
   padding-right: 65px;
 }
 
@@ -253,7 +284,10 @@ h2 {
 
 .pictureOfTheDayText {
   text-align: center;
-  margin-top: 25px;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .listLayout {

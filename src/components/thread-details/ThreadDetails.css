@@ -12,9 +12,15 @@
   line-height: 30px;
   text-align: left;
   padding: 10px;
+  width: 100%;
   max-width: 1200px;
-  font-weight: medium;
+  font-weight: 550;
   background-color: var(--answerBoxColor);
+}
+
+.bottomSpace {
+  margin-top: 120px;
+  margin-bottom: 250px;
 }
 
 .qADiv {
@@ -37,4 +43,14 @@
 .authorName {
   display: flex;
   font-size: 1.25rem;
+}
+
+.bannerArticle {
+  font-family: var(--hfont);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-left: 65px;
+  padding-right: 20px;
 }

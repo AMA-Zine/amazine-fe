@@ -5,19 +5,11 @@ exports[`Header component renders Header Component 1`] = `
   <header
     class="headerContainer"
   >
-    <h1
-      class="title"
-    >
-      AMAzine
-    </h1>
-    <img
-      class="logo"
-      src="/assets/amazine.png"
-    />
     <div
       class="linkList"
     >
       <a
+        class="homeLink"
         href="/"
       >
         <div>
@@ -27,11 +19,22 @@ exports[`Header component renders Header Component 1`] = `
       <a
         href="/about"
       >
-        <div>
+        <div
+          class="aboutLink"
+        >
           About
         </div>
       </a>
     </div>
+    <h1
+      class="title"
+    >
+      AMAzine
+    </h1>
+    <img
+      class="logo"
+      src="/assets/amazine.png"
+    />
   </header>
 </DocumentFragment>
 `;
