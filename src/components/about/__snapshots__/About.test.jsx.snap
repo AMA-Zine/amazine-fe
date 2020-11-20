@@ -26,14 +26,14 @@ exports[`About component renders About Component 1`] = `
           columnLeft
         "
       >
-        <img
-          alt="portrait of Sarah"
-          class="bioPic"
-          src="/assets/sarah-picture.jpg"
-        />
         <a
           href="/sarah"
         >
+          <img
+            alt="portrait of Sarah"
+            class="bioPic"
+            src="/assets/sarah-picture.jpg"
+          />
           <h3
             class="titleFont"
           >
@@ -53,14 +53,14 @@ exports[`About component renders About Component 1`] = `
           columnLeft
         "
       >
-        <img
-          alt="portrait of Michelle"
-          class="bioPic"
-          src="/assets/michelle-portrait.JPG"
-        />
         <a
           href="/michelle"
         >
+          <img
+            alt="portrait of Michelle"
+            class="bioPic"
+            src="/assets/michelle-portrait.JPG"
+          />
           <h3
             class="titleFont"
           >
@@ -80,14 +80,14 @@ exports[`About component renders About Component 1`] = `
           columnRight
         "
       >
-        <img
-          alt="portrait of Patrick"
-          class="bioPic"
-          src="/assets/patrick-picture.jpg"
-        />
         <a
           href="/patrick"
         >
+          <img
+            alt="portrait of Patrick"
+            class="bioPic"
+            src="/assets/patrick-picture.jpg"
+          />
           <h3
             class="titleFont"
           >
@@ -107,14 +107,14 @@ exports[`About component renders About Component 1`] = `
           columnRight
         "
       >
-        <img
-          alt="portrait of Josh"
-          class="bioPic"
-          src="/assets/josh-picture.jpeg"
-        />
         <a
           href="/josh"
         >
+          <img
+            alt="portrait of Josh"
+            class="bioPic"
+            src="/assets/josh-picture.jpeg"
+          />
           <h3
             class="titleFont"
           >
