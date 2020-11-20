@@ -3,16 +3,13 @@ import { useParams } from 'react-router-dom';
 import { useResponseById } from '../../hooks/responses';
 import { useThreadById } from '../../hooks/threads';
 import styles from '../app/styles.css';
+import threadstyles from './ThreadDetails.css';
 
 export default function ThreadDetails() {
   const { id } = useParams(); 
   const { thread } = useThreadById(id);
   const { response } = useResponseById(id);
   const qAList = response.qAndA;
-
-  console.log('thread', thread);
-  console.log('response', response);
-  console.log('id', id);
 
   function displayQuestion(list, question, i) {
     if(i > 0 && question === list[i - 1].question) return false;
@@ -21,13 +18,13 @@ export default function ThreadDetails() {
   }
 
   const displayQA = qAList && qAList.map((qAItem, i) => (
-    <div key={i}>
-      <h2>
+    <div key={i} className={threadstyles.qADiv}>
+      <h2 className={`${threadstyles.question} ${styles.questionDiv}`}>
         {displayQuestion(qAList, qAItem.question, i) && qAItem.question}
       </h2>
-      <h3>
+      <p className={`${threadstyles.answer} ${styles.answerDiv}`}>
         {qAItem.answer}
-      </h3>
+      </p>
     </div>
   ));
 
@@ -35,11 +32,13 @@ export default function ThreadDetails() {
     <div className={`${styles.headerSpace} ${styles.bottomSpace}`}>
       <hr />
 
-      <h2 className={styles.flairTitle}>{thread && thread.flair}</h2>
+      <h2 className={threadstyles.flairTitle}>Category: {thread && thread.flair}</h2>
       <article className={styles.bannerArticle}>
-        <h1 className={styles.normalGap}>
+        <h1 className={`${styles.normalGap} ${threadstyles.threadTitle}`}>
           {thread && thread.title}
         </h1>
+        <h2 className={threadstyles.authorName}>
+        Interview By <br/>{thread && thread.author}</h2>
       </article>
 
       <div>
@@ -47,7 +46,6 @@ export default function ThreadDetails() {
       </div>
 
       <hr />
-
     </div>
   );
 }
