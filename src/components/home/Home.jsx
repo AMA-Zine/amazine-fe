@@ -50,7 +50,11 @@ export default function Home() {
       <hr />
 
       <article className={styles.bannerArticle}>
-        <img src="http://placekitten.com/300/50" alt={natGeo.alt}></img>
+        <img 
+          className={styles.natGeoImage} 
+          src={natGeo.image} 
+          alt={natGeo.alt}
+        ></img>
         <h2 className={styles.normalGap}>National Geographic Picture</h2>
       </article>
 
@@ -153,7 +157,7 @@ export default function Home() {
           ${styles.article} 
           ${styles.lowerLeft}
         `}>
-            <img src="http://placekitten.com/150/100"></img>
+            <img className={styles.foodBannerImage} src={recipe.image}></img>
             <h4 className={styles.titleFont}>Recipe of the Day</h4>
             <p className={styles.bodyFont}>{recipe.title}</p>
           </article>
@@ -164,7 +168,7 @@ export default function Home() {
           ${styles.article} 
           ${styles.lowerCenter}
         `}>
-            <img src="http://placekitten.com/150/100"></img>
+            <img className={styles.foodBannerImage} src={wine.image}></img>
             <h4 className={styles.titleFont}>Wine of the Day</h4>
             <p className={styles.bodyFont}>{wine.title}</p>
           </article>
@@ -175,7 +179,7 @@ export default function Home() {
           ${styles.article} 
           ${styles.lowerRight}
         `}>
-            <img src="http://placekitten.com/150/100"></img>
+            <img className={styles.foodBannerImage} src={dessert.image}></img>
             <h4 className={styles.titleFont}>Dessert of the Day</h4>
             <p className={styles.bodyFont}>{dessert.title}</p>
           </article>
