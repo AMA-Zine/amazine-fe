@@ -3,19 +3,19 @@ import styles from '../app/styles.css';
 import aboutstyles from '../../components/about/About.css';
 export default function JoshDetail() {
   return (
-    <div className={`${styles.headerSpace} ${styles.bottomSpace}`}>
-    <hr />
-    <article className={styles.bannerArticle}>
-      <img src={'/assets/josh-picture.jpeg'} alt="portrait of Josh" className={aboutstyles.bioPic} />
-      <h1 className={styles.normalGap}>
+    <div className={`${styles.headerSpace} ${styles.bottomSpaces}`}>
+      <hr />
+      <article className={styles.bannerArticles}>
+        <img src={'/assets/josh-picture.jpeg'} alt="portrait of Josh" className={aboutstyles.bioPic} />
+        <h1 className={styles.normalGap}>
         I'm Josh Olloqui, a software developer based in Portland, OR. Ask Me Anything!
-        <a href="https://github.com/josholloqui" ><div className={aboutstyles.ghIcon}></div></a>
+          <a href="https://github.com/josholloqui" ><div className={aboutstyles.ghIcon}></div></a>
         
-        <a href="https://www.linkedin.com/in/josholloqui/" ><div className={aboutstyles.liIcon}></div></a>
-      </h1>
+          <a href="https://www.linkedin.com/in/josholloqui/" ><div className={aboutstyles.liIcon}></div></a>
+        </h1>
 
-    </article>
-    <hr />
+      </article>
+      <hr />
 
       <div className={styles.questionDiv}>
         <h2>What inanimate object would be the most annoying if it played loud, upbeat music while being used?</h2>
@@ -37,5 +37,5 @@ export default function JoshDetail() {
       </div>
 
     </div>
-  )
+  );
 }

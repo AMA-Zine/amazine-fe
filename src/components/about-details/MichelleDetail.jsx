@@ -5,17 +5,17 @@ import aboutstyles from '../../components/about/About.css';
 export default function MichelleDetail() {
   return (
     <div className={`${styles.headerSpace} ${styles.bottomSpace}`}>
-    <hr />
-    <article className={styles.bannerArticle}>
-      <img src={'/assets/michelle-portrait.JPG'} alt="portrait of Michelle" className={aboutstyles.bioPic} />
-      <h1 className={styles.normalGap}>
+      <hr />
+      <article className={styles.bannerArticles}>
+        <img src={'/assets/michelle-portrait.JPG'} alt="portrait of Michelle" className={aboutstyles.bioPic} />
+        <h1 className={styles.normalGap}>
         I'm Michelle Stermitz, a software developer based in Portland, OR. Ask Me Anything!
-        <a href="https://github.com/michmitz" ><div className={aboutstyles.ghIcon}></div></a>
+          <a href="https://github.com/michmitz" ><div className={aboutstyles.ghIcon}></div></a>
         
-        <a href="https://www.linkedin.com/in/michellestermitz/" ><div className={aboutstyles.liIcon}></div></a>        
-      </h1>
-    </article>
-    <hr />
+          <a href="https://www.linkedin.com/in/michellestermitz/" ><div className={aboutstyles.liIcon}></div></a>        
+        </h1>
+      </article>
+      <hr />
 
       <div className={styles.questionDiv}>
         <h2>What movie can you watch over and over without getting tired of it?</h2>
@@ -37,5 +37,5 @@ export default function MichelleDetail() {
       </div>
 
     </div>
-  )
+  );
 }
