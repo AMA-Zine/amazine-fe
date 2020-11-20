@@ -2,8 +2,12 @@
 
 exports[`Header component renders Header Component 1`] = `
 <DocumentFragment>
-  <header>
-    <h1>
+  <header
+    class="headerContainer"
+  >
+    <h1
+      class="title"
+    >
       AMAzine
     </h1>
     <img
