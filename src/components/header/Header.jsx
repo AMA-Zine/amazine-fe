@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Header() {
   return (
     <header>
-      <h1>The Most Amazine Zine You Have Ever Seen!</h1>
+      <h1>AMAzine</h1>
       <img className={styles.logo} src={'/assets/amazine.png'} />
       <div className={styles.linkList}>
         <Link key="home-link" to="/">

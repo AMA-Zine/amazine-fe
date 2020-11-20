@@ -4,7 +4,7 @@ exports[`Header component renders Header Component 1`] = `
 <DocumentFragment>
   <header>
     <h1>
-      The Most Amazine Zine You Have Ever Seen!
+      AMAzine
     </h1>
     <img
       class="logo"
