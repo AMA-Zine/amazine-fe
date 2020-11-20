@@ -20,6 +20,15 @@
   font-family: var(--bfont);
 }
 
+.qAThread {
+  max-width: 
+}
+
+.flairTitle {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .titleFont {
   font-family: 'Roboto Condensed', sans-serif;
   color: var(--color1);
