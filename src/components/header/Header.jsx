@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.linkList}>
-        <Link key="home-link" to="/">
+        <Link key="home-link" className={styles.homeLink} to="/">
           <div>Home</div>
         </Link>
         <Link key="about-link" to="/about">
