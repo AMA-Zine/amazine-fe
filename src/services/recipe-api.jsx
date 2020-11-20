@@ -20,10 +20,10 @@ export const getWine = () => {
     .then(wine => {
       return {
         id: wine[0].id,
-        title: wine[0].title,
-        description: wine[0].description,
-        image: wine[0].imageUrl,
-        linkSrc: wine[0].link
+        title: wine[0].wine.title,
+        description: wine[0].wine.description,
+        image: wine[0].wine.imageUrl,
+        linkSrc: wine[0].wine.link
       };
     });
 };
@@ -34,10 +34,10 @@ export const getDessert = async() => {
     .then(dessert => {
       return {
         id: dessert[0].id,
-        title: dessert[0].title,
-        image: dessert[0].image,
-        summary: dessert[0].summary,
-        linkSrc: dessert[0].sourceUrl
+        title: dessert[0].dessert.title,
+        image: dessert[0].dessert.image,
+        summary: dessert[0].dessert.summary,
+        linkSrc: dessert[0].dessert.sourceUrl
       };
     });
 };
