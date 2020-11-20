@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders Header Component 1`] = `
+<DocumentFragment>
+  <header
+    class="headerContainer"
+  >
+    <div
+      class="linkList"
+    >
+      <a
+        class="homeLink"
+        href="/"
+      >
+        <div>
+          Home
+        </div>
+      </a>
+      <a
+        href="/about"
+      >
+        <div
+          class="aboutLink"
+        >
+          About
+        </div>
+      </a>
+    </div>
+    <h1
+      class="title"
+    >
+      AMAzine
+    </h1>
+    <img
+      class="logo"
+      src="/assets/amazine.png"
+    />
+  </header>
+</DocumentFragment>
+`;

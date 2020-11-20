@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component renders About Component 1`] = `
+<DocumentFragment>
+  <div
+    class="headerSpace bottomSpace"
+  >
+    <hr />
+    <article
+      class="bannerArticle"
+    >
+      <h1
+        class="normalGap"
+      >
+        About Us
+      </h1>
+    </article>
+    <hr />
+    <div
+      class="aboutGrid"
+    >
+      <article
+        class="
+          article 
+          rowTop 
+          columnLeft
+        "
+      >
+        <a
+          href="/sarah"
+        >
+          <img
+            alt="portrait of Sarah"
+            class="bioPic"
+            src="/assets/sarah-picture.jpg"
+          />
+          <h3
+            class="titleFont"
+          >
+            I'm Sarah.
+          </h3>
+        </a>
+        <p
+          class="bodyFont"
+        >
+          Ask Me Anything!
+        </p>
+      </article>
+      <article
+        class="
+          article 
+          rowBottom
+          columnLeft
+        "
+      >
+        <a
+          href="/michelle"
+        >
+          <img
+            alt="portrait of Michelle"
+            class="bioPic"
+            src="/assets/michelle-portrait.JPG"
+          />
+          <h3
+            class="titleFont"
+          >
+            I'm Michelle.
+          </h3>
+        </a>
+        <p
+          class="bodyFont"
+        >
+          Ask Me Anything!
+        </p>
+      </article>
+      <article
+        class="
+          article 
+          rowTop
+          columnRight
+        "
+      >
+        <a
+          href="/patrick"
+        >
+          <img
+            alt="portrait of Patrick"
+            class="bioPic"
+            src="/assets/patrick-picture.jpg"
+          />
+          <h3
+            class="titleFont"
+          >
+            I'm Patrick.
+          </h3>
+        </a>
+        <p
+          class="bodyFont"
+        >
+          Ask Me Anything!
+        </p>
+      </article>
+      <article
+        class="
+          article 
+          rowBottom
+          columnRight
+        "
+      >
+        <a
+          href="/josh"
+        >
+          <img
+            alt="portrait of Josh"
+            class="bioPic"
+            src="/assets/josh-picture.jpeg"
+          />
+          <h3
+            class="titleFont"
+          >
+            I'm Josh.
+          </h3>
+        </a>
+        <p
+          class="bodyFont"
+        >
+          Ask Me Anything!
+        </p>
+      </article>
+    </div>
+    <hr />
+  </div>
+</DocumentFragment>
+`;

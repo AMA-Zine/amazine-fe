@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
+:root {
+  --color1: #f94710;
+  --color2: #040403;
+  --color3: #ffbd59;
+  --color4: #f3f3f3;
+  --color5: #0094b1;
+  
+  --questionBoxColor: #e8f5f8;
+  --answerBoxColor: #fff4e4;
+
+  --hfont: 'Roboto Condensed', sans-serif;
+  --bfont: 'Roboto Mono', monospace;
+
+  --screen-width: 1500px;
+  --header-height: 100px;
+
+  max-width: var(--screen-width);
+  margin: auto;
+  background-color: var(--color4);
+  font-family: var(--bfont);
+}
+
+.questionBox {
+background-color: var(--questionBoxColor);
+}
+
+.answerBox {
+background-color: var(--answerBoxColor);
+}
+
+.flairTitle {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.titleFont {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.2rem;
+  color: var(--color1);
+  text-transform: capitalize;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.featurePadding {
+  padding: 50px;
+}
+
+.bodyFont {
+  font-family: 'Roboto Mono', monospace;
+  font-size: .88rem;
+  color: var(--color5);
+  font-weight: bold;
+}
+
+hr {
+  margin: 25px 0 25px 0;
+  border-top: 1px solid var(--color2);
+}
+
+header {
+  background-color: var(--color1);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 2;
+}
+
+h1 {
+  text-align: center;
+  font-family: var(--hfont);
+}
+
+.title {
+  font-size: 58px;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.linkList {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  color: #040403;
+}
+
+.aboutLink {
+  padding-left: 20px;
+  color: #040403;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.homeLink {
+  color: #040403;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+
+.bottomSpace {
+  margin-bottom: 250px;
+}
+
+.bannerArticle {
+  font-family: var(--hfont);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.normalGap {
+  margin: auto 25px;
+  display: grid;
+}
+
+.articleGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  margin: 0 25px 0 25px;
+}
+
+.article {
+  text-align: center;
+}
+
+.featured {
+  grid-column-start: 4;
+  grid-column-end: span 6;
+  grid-row-start: 1;
+  grid-row-end: span 6;
+  border-left: 1px solid var(--color2);
+  border-right: 1px solid var(--color2);
+  text-align: center;
+}
+
+.featuredTitle {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 40px;
+  margin: 0;
+  color: var(--color1);
+  text-transform: capitalize;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.columnLeft {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+}
+
+.columnRight {
+  grid-column-start: 10;
+  grid-column-end: span 3;
+}
+
+.rowTop {
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+
+.rowBottom {
+  grid-row-start: 3;
+  grid-row-end: span 4;
+}
+
+.lowerBarGrid {
+  margin: 50px 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 25px;
+}
+
+.lowerLeft {
+  grid-column-start: 1;
+  grid-column-end: span 1;
+}
+
+.lowerCenter {
+  grid-column-start: 2;
+  grid-column-end: span 1;
+}
+
+.lowerRight {
+  grid-column-start: 3;
+  grid-column-end: span 1;
+}
+
+.listArticle {
+  margin: 50px 25px 50px 25px;
+  display: flex;
+}
+
+section {
+  margin: auto 50px;
+}
+
+.questionDiv {
+  border: solid 1px var(--color5);
+  margin: 10px;
+  text-align: center;
+}
+
+.answerDiv {
+  border: solid 1px var(--color3);
+  margin: 10px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none
+}
+
+h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: var(--color5);
+}
+
+.logo {
+  display: flex;
+  justify-self: end;
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.photoDay {
+  margin-top: 120px;
+}
+
+.featuredImage {
+  width: 90%;
+  height: auto;
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+.frontImage {
+  max-width: 90%;
+  height: auto;
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+.listImage {
+  width: 23%;
+  height: auto;
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+.natGeoImage {
+  width: auto;
+  height: 100px;
+  padding-right: 65px;
+}
+
+.foodBannerImage {
+  width: auto;
+  height: 100px;
+}
+
+.pictureOfTheDayText {
+  text-align: center;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.listLayout {
+  display: flex;
+}
