@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
-    <header>
-      <h1>AMAzine</h1>
+    <header className={styles.headerContainer}>
+      <h1 className={styles.title}>AMAzine</h1>
       <img className={styles.logo} src={'/assets/amazine.png'} />
       <div className={styles.linkList}>
         <Link key="home-link" to="/">
