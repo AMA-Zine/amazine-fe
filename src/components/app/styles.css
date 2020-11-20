@@ -11,7 +11,6 @@
   --questionBoxColor: #e8f5f8;
   --answerBoxColor: #fff4e4;
 
-
   --hfont: 'Roboto Condensed', sans-serif;
   --bfont: 'Roboto Mono', monospace;
 
@@ -22,6 +21,14 @@
   margin: auto;
   background-color: var(--color4);
   font-family: var(--bfont);
+}
+
+.questionBox {
+background-color: var(--questionBoxColor);
+}
+
+.answerBox {
+background-color: var(--answerBoxColor);
 }
 
 .flairTitle {

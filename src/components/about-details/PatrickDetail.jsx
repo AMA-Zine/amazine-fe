@@ -17,22 +17,22 @@ export default function PatrickDetail() {
       </article>
       <hr />
 
-      <div className={styles.questionDiv}>
+      <div className={`${styles.questionDiv} ${styles.questionBox}`}>
         <h2>What would you name a boat if you had one?</h2>
       </div>
-      <div className={styles.answerDiv}>
+      <div className={`${styles.answerDiv} ${styles.answerBox}`}>
         <p>Answer: Stormseeker would be my boat. It's a nod to one of my favorite games, and would also be clever if I was ever caught in a storm.</p> 
       </div>
-      <div className={styles.questionDiv}>
+      <div className={`${styles.questionDiv} ${styles.questionBox}`}>
         <h2>What's your cure for hiccups?</h2>
       </div>
-      <div className={styles.answerDiv}>
+      <div className={`${styles.answerDiv} ${styles.answerBox}`}>
         <p>Answer: Forgetting about them seems to be the best way to cure the hiccups, but it can be difficult when you have them.</p> 
       </div>
-      <div className={styles.questionDiv}>
+      <div className={`${styles.questionDiv} ${styles.questionBox}`}>
         <h2>What are you interested in that you think most people aren't?</h2>
       </div>
-      <div className={styles.answerDiv}>
+      <div className={`${styles.answerDiv} ${styles.answerBox}`}>
         <p>Answer: I am interested in building siege engines like cannons, catapults, giant ballistas, etc. I've only met one other person that was into it and he helps me build them.</p> 
       </div>
 

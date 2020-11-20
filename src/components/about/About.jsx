@@ -22,8 +22,8 @@ export default function About() {
           ${aboutstyles.rowTop} 
           ${aboutstyles.columnLeft}
         `}>
-          <img src={'/assets/sarah-picture.jpg'} alt="portrait of Sarah" className={aboutstyles.bioPic}></img>
           <Link key="sarah" to="/sarah">
+            <img src={'/assets/sarah-picture.jpg'} alt="portrait of Sarah" className={aboutstyles.bioPic}></img>
             <h3 className={styles.titleFont}>I'm Sarah.</h3>
           </Link>
           <p className={styles.bodyFont}>Ask Me Anything!</p>
@@ -34,8 +34,8 @@ export default function About() {
           ${aboutstyles.rowBottom}
           ${aboutstyles.columnLeft}
         `}>
-          <img src={'/assets/michelle-portrait.JPG'} alt="portrait of Michelle" className={aboutstyles.bioPic}></img>
           <Link key="michelle" to="/michelle">
+            <img src={'/assets/michelle-portrait.JPG'} alt="portrait of Michelle" className={aboutstyles.bioPic}></img>
             <h3 className={styles.titleFont}>I'm Michelle.</h3>
           </Link>
           <p className={styles.bodyFont}>Ask Me Anything!</p>
@@ -46,8 +46,8 @@ export default function About() {
           ${aboutstyles.rowTop}
           ${aboutstyles.columnRight}
         `}>
-          <img src={'/assets/patrick-picture.jpg'} alt="portrait of Patrick" className={aboutstyles.bioPic}></img>
           <Link key="patrick" to="/patrick">
+            <img src={'/assets/patrick-picture.jpg'} alt="portrait of Patrick" className={aboutstyles.bioPic}></img>
             <h3 className={styles.titleFont}>I'm Patrick.</h3>
           </Link>
           <p className={styles.bodyFont}>Ask Me Anything!</p>
@@ -58,8 +58,8 @@ export default function About() {
           ${aboutstyles.rowBottom}
           ${aboutstyles.columnRight}
         `}>
-          <img src={'/assets/josh-picture.jpeg'} alt="portrait of Josh" className={aboutstyles.bioPic}></img>
           <Link key="josh" to="/josh">
+            <img src={'/assets/josh-picture.jpeg'} alt="portrait of Josh" className={aboutstyles.bioPic}></img>
             <h3 className={styles.titleFont}>I'm Josh.</h3>
           </Link>
           <p className={styles.bodyFont}>Ask Me Anything!</p>
