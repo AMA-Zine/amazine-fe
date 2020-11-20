@@ -29,11 +29,11 @@ export default function ThreadDetails() {
   ));
 
   return (
-    <div className={`${styles.headerSpace} ${styles.bottomSpace}`}>
+    <div className={`${styles.headerSpace} ${threadstyles.bottomSpace}`}>
       <hr />
 
       <h2 className={threadstyles.flairTitle}>Category: {thread && thread.flair}</h2>
-      <article className={styles.bannerArticle}>
+      <article className={threadstyles.bannerArticle}>
         <h1 className={`${styles.normalGap} ${threadstyles.threadTitle}`}>
           {thread && thread.title}
         </h1>

@@ -14,12 +14,6 @@ export default function Home() {
   const { natGeo } = useNatGeo();
   const subThreads = threads.slice(5);
 
-  console.log('threads', threads);
-  console.log('recipe', recipe);
-  console.log('wine', wine);
-  console.log('dessert', dessert);
-  console.log('natGeo', natGeo);
-
   const subThreadList = subThreads.map((currentThread, i) => (
     <div key={currentThread.title}>
       <Link to={`/thread/${threads[i + 5]?.id}`} className={styles.listArticle}>
@@ -45,23 +39,20 @@ export default function Home() {
 
   return (
     <div className={`${styles.headerSpace} ${styles.bottomSpace}`}>
-      <hr />
+      <div className={styles.photoDay}>
+        <hr />
 
-      <article className={styles.bannerArticle}>
-        <a href={natGeo.image}>
-          <img 
-            className={styles.natGeoImage} 
-            src={natGeo.image} 
-            alt={natGeo.alt}
-          ></img>
-        </a>
-      </article>
-      <h2 className={`${styles.pictureOfTheDayText} ${styles.normalGap}`}>Picture Of the Day</h2>
+        <article className={styles.bannerArticle}>
+          <a href={natGeo.image}>
+            <h2 className={`${styles.pictureOfTheDayText} ${styles.normalGap}`}>Check Out the Picture Of the Day</h2>
+          </a>
+        </article>
 
-      <hr />
 
+        <hr />
+      </div>
+      
       <div className={styles.articleGrid}>
-
         <Link to={`/thread/${threads[0]?.id}`} className={`
           ${styles.featured}
         `}>
@@ -72,10 +63,10 @@ export default function Home() {
               alt={threads[0]?.flair}
             ></img>
             <h3 
-              className={`${styles.titleFont} ${styles.featurePadding}`}
+              className={`${styles.featuredTitle} ${styles.featurePadding}`}
             >{threads[0]?.title}</h3>
             <p 
-              className={styles.bodyFont}
+              className={styles.featuredFont}
             >Interview by {threads[0]?.author}</p>
           </article>
         </Link>
