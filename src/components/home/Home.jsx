@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { useThreads } from '../../hooks/threads';
 import { useRecipe, useWine, useDessert } from '../../hooks/recipes';
@@ -123,32 +124,38 @@ export default function Home() {
       <hr />
       <div className={styles.lowerBarGrid}>
 
-        <article className={`
+        <Link to={'/recipe'}>
+          <article className={`
           ${styles.article} 
           ${styles.lowerLeft}
         `}>
-          <img src="http://placekitten.com/150/100"></img>
-          <h4 className={styles.titleFont}>Recipe</h4>
-          <p className={styles.bodyFont}>Recipe Description</p>
-        </article>
+            <img src="http://placekitten.com/150/100"></img>
+            <h4 className={styles.titleFont}>Recipe of the Day</h4>
+            <p className={styles.bodyFont}>{recipe.title}</p>
+          </article>
+        </Link>
 
-        <article className={`
+        <Link to={'/wine'}>
+          <article className={`
           ${styles.article} 
           ${styles.lowerCenter}
         `}>
-          <img src="http://placekitten.com/150/100"></img>
-          <h4 className={styles.titleFont}>Wine</h4>
-          <p className={styles.bodyFont}>Wine Description</p>
-        </article>
+            <img src="http://placekitten.com/150/100"></img>
+            <h4 className={styles.titleFont}>Wine of the Day</h4>
+            <p className={styles.bodyFont}>{wine.title}</p>
+          </article>
+        </Link>
 
-        <article className={`
+        <Link to={'/dessert'}>
+          <article className={`
           ${styles.article} 
           ${styles.lowerRight}
         `}>
-          <img src="http://placekitten.com/150/100"></img>
-          <h4 className={styles.titleFont}>Dessert</h4>
-          <p className={styles.bodyFont}>Dessert Description</p>
-        </article>
+            <img src="http://placekitten.com/150/100"></img>
+            <h4 className={styles.titleFont}>Dessert of the Day</h4>
+            <p className={styles.bodyFont}>{dessert.title}</p>
+          </article>
+        </Link>
 
       </div>
       <hr />

@@ -6,8 +6,8 @@ export const useRecipe = () => {
 
   useEffect(() => {
     getRecipe()
-      .then(fetchedRecipe => setRecipe(fetchedRecipe))
-  }, [])
+      .then(fetchedRecipe => setRecipe(fetchedRecipe));
+  }, []);
 
   return {
     recipe
@@ -19,8 +19,8 @@ export const useWine = () => {
 
   useEffect(() => {
     getWine()
-      .then(fetchedWine => setWine(fetchedWine))
-  }, [])
+      .then(fetchedWine => setWine(fetchedWine));
+  }, []);
 
   return {
     wine
@@ -32,8 +32,8 @@ export const useDessert = () => {
 
   useEffect(() => {
     getDessert()
-      .then(fetchedDessert => setDessert(fetchedDessert))
-  }, [])
+      .then(fetchedDessert => setDessert(fetchedDessert));
+  }, []);
 
   return {
     dessert

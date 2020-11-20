@@ -5,10 +5,11 @@ export const getRecipe = () => {
     .then(res => res.json())
     .then(recipe => {
       return {
-        id: recipe.id,
-        title: recipe.title,
-        image: recipe.image,
-        linkSrc: recipe.sourceUrl
+        id: recipe[0].id,
+        title: recipe[0].recipe.title,
+        image: recipe[0].recipe.image,
+        linkSrc: recipe[0].recipe.sourceUrl,
+        summary: recipe[0].recipe.summary
       };
     });
 };
@@ -18,10 +19,11 @@ export const getWine = () => {
     .then(res => res.json())
     .then(wine => {
       return {
-        id: wine.id,
-        title: wine.title,
-        image: wine.imageUrl,
-        linkSrc: wine.link
+        id: wine[0].id,
+        title: wine[0].title,
+        description: wine[0].description,
+        image: wine[0].imageUrl,
+        linkSrc: wine[0].link
       };
     });
 };
@@ -31,10 +33,11 @@ export const getDessert = async() => {
     .then(res => res.json())
     .then(dessert => {
       return {
-        id: dessert.id,
-        title: dessert.title,
-        image: dessert.image,
-        linkSrc: dessert.sourceUrl
+        id: dessert[0].id,
+        title: dessert[0].title,
+        image: dessert[0].image,
+        summary: dessert[0].summary,
+        linkSrc: dessert[0].sourceUrl
       };
     });
 };
