@@ -47,36 +47,34 @@ hr {
 
 header {
   background-color: var(--color1);
-  position: fixed;
-  top: 0;
-  width: var(--screen-width);
-  max-height: var(--header-height);
-  z-index: 1;
-  padding-bottom: 15px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
 }
 
 h1 {
   text-align: center;
   font-family: var(--hfont);
-  align-self: center;
-  width: var(--screen-width);
+}
+
+.title {
+  font-size: 72px;
+  letter-spacing: 3px;
+  margin: 0;
 }
 
 .linkList {
   display: flex;
-  position: absolute;
+  flex-direction: row;
 }
 
-.linkList > * {
-  margin: 15px 15px 15px 15px;
-  font-weight: bolder;
+.aboutLink {
+  padding-left: 20px;
 }
 
 .headerSpace {
-  position: absolute;
-  top: var(--header-height);
-  width: var(--screen-width);
+  
 }
 
 .bottomSpace {
@@ -193,25 +191,11 @@ h2 {
 }
 
 .logo {
-  width: 7%;
+  width: 75px;
+  align-self: center;
   height: auto;
   border-radius: 50%;
-  margin-top: 6px;
-  margin-right: 10px;
-  position: fixed;
   right: 25px;
-}
-
-.headerContainer {
-  display: flex;
-  flex-direction: row;
-}
-
-.title {
-  font-size: 6em;
-  position: fixed;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .featuredImage {
