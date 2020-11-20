@@ -6,7 +6,7 @@ export default function PatrickDetail() {
   return (
     <div className={`${styles.headerSpace} ${styles.bottomSpace}`}>
       <hr />
-      <article className={styles.bannerArticle}>
+      <article className={styles.bannerArticles}>
         <img src={'/assets/patrick-picture.jpg'} alt="portrait of Patrick" className={aboutstyles.bioPic} />
         <h1 className={styles.normalGap}>
         I'm Patrick Wilson, a software developer based in Portland, OR. Ask Me Anything!

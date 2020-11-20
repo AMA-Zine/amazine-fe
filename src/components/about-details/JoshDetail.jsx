@@ -5,7 +5,7 @@ export default function JoshDetail() {
   return (
     <div className={`${styles.headerSpace} ${styles.bottomSpace}`}>
       <hr />
-      <article className={styles.bannerArticle}>
+      <article className={styles.bannerArticles}>
         <img src={'/assets/josh-picture.jpeg'} alt="portrait of Josh" className={aboutstyles.bioPic} />
         <h1 className={styles.normalGap}>
         I'm Josh Olloqui, a software developer based in Portland, OR. Ask Me Anything!

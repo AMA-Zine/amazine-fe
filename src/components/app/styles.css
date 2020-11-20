@@ -127,6 +127,15 @@ h1 {
   justify-content: center;
 }
 
+.bannerArticles {
+  margin-top: 100px;
+  font-family: var(--hfont);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .normalGap {
   margin: auto 25px;
   display: grid;

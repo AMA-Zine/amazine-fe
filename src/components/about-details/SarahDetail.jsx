@@ -7,7 +7,7 @@ export default function SarahDetail() {
   return (
     <div className={`${styles.headerSpace} ${styles.bottomSpace}`}>
       <hr />
-      <article className={styles.bannerArticle}>
+      <article className={styles.bannerArticles}>
         <img src={'/assets/sarah-picture.jpg'} alt="portrait of Sarah" className={aboutstyles.bioPic} />
         <h1 className={styles.normalGap}>
         I'm Sarah Rector, a software developer based in Portland, OR. Ask Me Anything!

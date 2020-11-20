@@ -6,7 +6,7 @@ export default function MichelleDetail() {
   return (
     <div className={`${styles.headerSpace} ${styles.bottomSpace}`}>
       <hr />
-      <article className={styles.bannerArticle}>
+      <article className={styles.bannerArticles}>
         <img src={'/assets/michelle-portrait.JPG'} alt="portrait of Michelle" className={aboutstyles.bioPic} />
         <h1 className={styles.normalGap}>
         I'm Michelle Stermitz, a software developer based in Portland, OR. Ask Me Anything!
