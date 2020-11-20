@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import styles from '../app/styles.css';
 import aboutstyles from './About.css';
@@ -7,23 +8,23 @@ import { Link } from 'react-router-dom';
 export default function About() {
   return (
     <div className={`${styles.headerSpace} ${styles.bottomSpace}`}>
-    <hr />
-    <article className={styles.bannerArticle}>
-      <h1 className={styles.normalGap}>
+      <hr />
+      <article className={styles.bannerArticle}>
+        <h1 className={styles.normalGap}>
         About Us
-      </h1>
-    </article>
-    <hr />
+        </h1>
+      </article>
+      <hr />
 
-    <div className={aboutstyles.aboutGrid}>
-    <article className={`
+      <div className={aboutstyles.aboutGrid}>
+        <article className={`
           ${styles.article} 
           ${aboutstyles.rowTop} 
           ${aboutstyles.columnLeft}
         `}>
           <img src={'/assets/sarah-picture.jpg'} alt="portrait of Sarah" className={aboutstyles.bioPic}></img>
-          <Link key='sarah' to='/sarah'>
-          <h3 className={styles.titleFont}>I'm Sarah.</h3>
+          <Link key="sarah" to="/sarah">
+            <h3 className={styles.titleFont}>I'm Sarah.</h3>
           </Link>
           <p className={styles.bodyFont}>Ask Me Anything!</p>
         </article>
@@ -34,8 +35,8 @@ export default function About() {
           ${aboutstyles.columnLeft}
         `}>
           <img src={'/assets/michelle-portrait.JPG'} alt="portrait of Michelle" className={aboutstyles.bioPic}></img>
-          <Link key='michelle' to='/michelle'>
-          <h3 className={styles.titleFont}>I'm Michelle.</h3>
+          <Link key="michelle" to="/michelle">
+            <h3 className={styles.titleFont}>I'm Michelle.</h3>
           </Link>
           <p className={styles.bodyFont}>Ask Me Anything!</p>
         </article>
@@ -46,8 +47,8 @@ export default function About() {
           ${aboutstyles.columnRight}
         `}>
           <img src={'/assets/patrick-picture.jpg'} alt="portrait of Patrick" className={aboutstyles.bioPic}></img>
-          <Link key='patrick' to='/patrick'>
-          <h3 className={styles.titleFont}>I'm Patrick.</h3>
+          <Link key="patrick" to="/patrick">
+            <h3 className={styles.titleFont}>I'm Patrick.</h3>
           </Link>
           <p className={styles.bodyFont}>Ask Me Anything!</p>
         </article>
@@ -58,8 +59,8 @@ export default function About() {
           ${aboutstyles.columnRight}
         `}>
           <img src={'/assets/josh-picture.jpeg'} alt="portrait of Josh" className={aboutstyles.bioPic}></img>
-          <Link key='josh' to='/josh'>
-          <h3 className={styles.titleFont}>I'm Josh.</h3>
+          <Link key="josh" to="/josh">
+            <h3 className={styles.titleFont}>I'm Josh.</h3>
           </Link>
           <p className={styles.bodyFont}>Ask Me Anything!</p>
         </article>
@@ -68,5 +69,5 @@ export default function About() {
       <hr />
 
     </div>
-  )
+  );
 }
