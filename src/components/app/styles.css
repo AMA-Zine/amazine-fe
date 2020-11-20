@@ -30,6 +30,10 @@
   color: var(--color1);
 }
 
+.featurePadding {
+  padding: 50px;
+}
+
 .bodyFont {
   font-family: 'Roboto Mono', monospace;
   color: var(--color5);
@@ -208,4 +212,39 @@ h2 {
   position: fixed;
   margin-left: auto;
   margin-right: auto;
+}
+
+.featuredImage {
+  width: 600px;
+  height: auto;
+}
+
+.frontImage {
+  max-width: 300px;
+  height: 250px;
+}
+
+.listImage {
+  width: auto;
+  height: 250px;
+}
+
+.natGeoImage {
+  width: auto;
+  height: 150px;
+  padding-right: 65px;
+}
+
+.foodBannerImage {
+  width: auto;
+  height: 100px;
+}
+
+.pictureOfTheDayText {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.listLayout {
+  display: flex;
 }
