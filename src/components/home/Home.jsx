@@ -22,10 +22,8 @@ export default function Home() {
 
   const subThreadList = subThreads.map((currentThread, i) => (
     <div key={currentThread.title}>
-      <Link to={`
-        /thread/${threads[i + 5]?.id}`
-      } className={styles.listArticle}>
-        <article>
+      <Link to={`/thread/${threads[i + 5]?.id}`} className={styles.listArticle}>
+        <article className={styles.listLayout}>
           <img
             className={styles.listImage}
             src={threads[i + 5]?.image}
@@ -50,13 +48,15 @@ export default function Home() {
       <hr />
 
       <article className={styles.bannerArticle}>
-        <img 
-          className={styles.natGeoImage} 
-          src={natGeo.image} 
-          alt={natGeo.alt}
-        ></img>
-        <h2 className={styles.normalGap}>National Geographic Picture</h2>
+        <a href={natGeo.image}>
+          <img 
+            className={styles.natGeoImage} 
+            src={natGeo.image} 
+            alt={natGeo.alt}
+          ></img>
+        </a>
       </article>
+      <h2 className={`${styles.pictureOfTheDayText} ${styles.normalGap}`}>Picture Of the Day</h2>
 
       <hr />
 
@@ -72,7 +72,7 @@ export default function Home() {
               alt={threads[0]?.flair}
             ></img>
             <h3 
-              className={styles.titleFont}
+              className={`${styles.titleFont} ${styles.featurePadding}`}
             >{threads[0]?.title}</h3>
             <p 
               className={styles.bodyFont}
