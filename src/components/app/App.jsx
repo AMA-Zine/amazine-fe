@@ -7,6 +7,9 @@ import {
 import Header from '../header/Header';
 import Home from '../home/Home';
 import ThreadDetails from '../thread-details/ThreadDetails';
+import RecipeDetails from '../recipe-details/RecipeDetails';
+import WineDetails from '../wine-details/WineDetails';
+import DessertDetails from '../dessert-details/DessertDetails';
 import About from '../about/About';
 import MichelleDetail from '../about-details/MichelleDetail';
 import PatrickDetail from '../about-details/PatrickDetail';
@@ -29,6 +32,21 @@ export default class App extends Component {
               path="/thread/:id"
               exact
               render={(routerProps) => <ThreadDetails {...routerProps} />}
+            />
+            <Route
+              path="/recipe"
+              exact
+              render={(routerProps) => <RecipeDetails {...routerProps} />}
+            />
+            <Route
+              path="/wine"
+              exact
+              render={(routerProps) => <WineDetails {...routerProps} />}
+            />
+            <Route
+              path="/dessert"
+              exact
+              render={(routerProps) => <DessertDetails {...routerProps} />}
             />
             <Route
               path="/about"

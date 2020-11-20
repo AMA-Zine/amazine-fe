@@ -24,11 +24,11 @@ export default function ThreadDetails() {
 
   return (
     <div className={`${styles.headerSpace} ${styles.bottomSpace}`}>
-    <hr />
+      <hr />
     
       <article className={styles.bannerArticle}>
         <h1 className={styles.normalGap}>
-        {thread && thread.title}     
+          {thread && thread.title}     
         </h1>
         <h2>{thread && thread.flair}</h2>
       </article>
@@ -40,5 +40,5 @@ export default function ThreadDetails() {
       <hr />
 
     </div>
-  )
+  );
 }
